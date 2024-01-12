@@ -174,6 +174,7 @@ img {
   max-width: 100%;
   padding: 188px 0;
   max-width: 1440px;
+  margin: 0 auto;
 }
 .hero-container {
   display: flex;
@@ -348,7 +349,7 @@ img {
 
 .ourteam-icon-item-link:hover,
 .ourteam-icon-item-link:focus {
-  background-color: #31d0aa;
+  background-color: #404bbf;
 }
 
 .ourteam-icon {
@@ -376,6 +377,9 @@ img {
   flex-basis: calc((100% - 48px) / 3);
   position: relative;
   overflow: hidden;
+  transition-property: border, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay-box {
@@ -390,7 +394,7 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   font-weight: 400;
-  padding: 40px 32px 164px 32px;
+  padding: 40px 32px;
   text-align: left;
   position: absolute;
   top: 0;
@@ -410,15 +414,12 @@ img {
   padding: 32px 16px;
   min-width: 100%;
   text-align: left;
-  transition-property: border, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-portf-list-item:hover .overlay {
   transform: translatey(0);
 }
-.our-portf-list-item:hover .div-for-border-portf {
+.our-portf-list-item:hover /*.div-for-border-portf*/ {
   border: 1px solid #f4f4fd;
   border-top: none;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -488,7 +489,7 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .footer-icon-list {
