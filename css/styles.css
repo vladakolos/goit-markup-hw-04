@@ -208,9 +208,7 @@ img {
   padding: 16px 32px;
   align-items: flex-start;
   gap: 10px;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover {
   background-color: #404bbf;
@@ -511,9 +509,7 @@ img {
   background-color: #4d5ae5;
   border-radius: 50%;
   flex-shrink: 0;
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon-item-link:hover,
 .footer-icon-item-link:focus {
