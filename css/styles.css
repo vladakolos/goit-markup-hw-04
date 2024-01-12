@@ -375,9 +375,10 @@ img {
   flex-basis: calc((100% - 48px) / 3);
   position: relative;
   overflow: hidden;
-  transition-property: border, box-shadow;
+  /* transition-property: border, box-shadow;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay-box {
@@ -385,15 +386,17 @@ img {
   overflow: hidden;
 }
 
-.overlay {
-  display: block;
+.overlay-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
   font-weight: 400;
-  padding: 40px 32px;
   text-align: left;
+}
+.overlay {
+  display: block;
+  padding: 40px 32px;
   position: absolute;
   top: 0;
   left: 0;
